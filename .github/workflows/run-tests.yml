@@ -1,10 +1,13 @@
 name: Run DSG and GG tests
 on:
   workflow_dispatch:
+  push:
   
 jobs:
   Run-Tests:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, azure]
+    container:
+      image: cypress/included:latest
     steps:
     - name: Checkout
       uses: actions/checkout@v4.1.7
