@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "run-tests": "yarn cypress run",
+    "debug-tests": "yarn cypress open --e2e --browser chrome"
+  },
+  "dependencies": {
+    "cypress": "^13.13.1"
+  }
+}
